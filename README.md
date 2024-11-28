@@ -9,9 +9,33 @@ This library provides two utilities to convert numeric values to words:
 
 To install this library, simply include it in your project:
 
+DENO
 ```bash
-npm install currency-in-words
+deno add jsr:@razmans/number-in-words
 ```
+
+YARN
+```bash
+yarn dlx jsr add @razmans/number-in-words
+```
+
+PNPM
+```bash
+pnpm dlx jsr add @razmans/number-in-words
+```
+
+BUN
+```bash
+bunx jsr add @razmans/number-in-words
+```
+
+
+NPM
+```bash
+npx jsr add @razmans/number-in-words
+```
+
+
 
 ## Usage
 
@@ -20,27 +44,27 @@ You can import and use either the `CurrencyInWords` or `NumberInWords` function 
 ### CurrencyInWords Example:
 
 ```typescript
-import { CurrencyInWords } from 'currency-in-words';
+import { CurrencyInWords } from '@razmans/number-in-words';
 
 const value = 1234.56;
 const currency = 'usd';
 const coins = 'cents';
 
 const result = CurrencyInWords(value, currency, coins);
-console.log(result);  // Output: "ONE THOUSAND TWO HUNDRED THIRTY-FOUR USD AND FIFTY-SIX CENTS ONLY"
+console.log(result);  // Output: "ONE THOUSAND TWO HUNDRED THIRTY FOUR USD AND FIFTY SIX CENTS ONLY"
 ```
 
 ### NumberInWords Example:
 
 ```typescript
-import { NumberInWords } from 'currency-in-words';
+import { NumberInWords } from '@razmans/number-in-words';
 
 const value1 = 123;
 const value2 = 123.45;
 const value3 = 1;
 
-console.log(NumberInWords(value1));  // Output: "ONE HUNDRED TWENTY-THREE"
-console.log(NumberInWords(value2));  // Output: "ONE HUNDRED TWENTY-THREE AND FORTY-FIVE"
+console.log(NumberInWords(value1));  // Output: "ONE HUNDRED TWENTY THREE"
+console.log(NumberInWords(value2));  // Output: "ONE HUNDRED TWENTY THREE AND FORTY-FIVE"
 console.log(NumberInWords(value3));  // Output: "ONE"
 ```
 
