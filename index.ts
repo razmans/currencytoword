@@ -15,7 +15,7 @@
  * CurrencyInWords(1234.56, 'GBP', 'pence'); // "ONE THOUSAND TWO HUNDRED THIRTY-FOUR GBP AND FIFTY-SIX PENCE ONLY"
  * @returns {string} - The currency amount converted to words.
  */
-/** Convert currency into words */
+/** Convert currency in number into words */
 
 export function CurrencyInWords(
   value: Number,
@@ -53,6 +53,8 @@ export function CurrencyInWords(
  * NumberInWords(0.75); // "SEVENTY-FIVE"
  * @returns {string} - The number converted to words, with "AND" added for fractional parts.
  */
+/** Convert number into words */
+
 export function NumberInWords(value: Number): string {
   var fraction = Math.round(frac(value) * 100);
   var f_text = '';
