@@ -82,18 +82,18 @@ console.log(NumberInWords(value3));  // Output: "ONE"
 
 Both functions return a string representing the value converted to words.
 
-#### Example Outputs for `CurrencyInWords`:
+#### More Example Outputs for CurrencyInWords:
 
-- `CurrencyInWords(100, 'USD', 'cents')` → "ONE HUNDRED USD ONLY"
-- `CurrencyInWords(1.25, 'USD', 'cents')` → "ONE USD AND TWENTY-FIVE CENTS ONLY"
-- `CurrencyInWords(1234.56, 'GBP', 'pence')` → "ONE THOUSAND TWO HUNDRED THIRTY-FOUR GBP AND FIFTY-SIX PENCE ONLY"
+- `CurrencyInWords(100, 'USD', 'cents')`→ "ONE HUNDRED USD ONLY"
+- `CurrencyInWords(1.25, 'USD', 'cents')` → "ONE USD AND TWENTY FIVE CENTS ONLY"
+- `CurrencyInWords(1234.56, 'GBP', 'pence')` → "ONE THOUSAND TWO HUNDRED THIRTY FOUR GBP AND FIFTY SIX PENCE ONLY"
 
-#### Example Outputs for `NumberInWords`:
+#### More Example Outputs for NumberInWords:
 
-- `NumberInWords(123)` → "ONE HUNDRED TWENTY-THREE"
-- `NumberInWords(123.45)` → "ONE HUNDRED TWENTY-THREE AND FORTY-FIVE"
+- `NumberInWords(123)` → "ONE HUNDRED TWENTY THREE"
+- `NumberInWords(123.45)` → "ONE HUNDRED TWENTY THREE AND FORTY FIVE"
 - `NumberInWords(1)` → "ONE"
-- `NumberInWords(0.75)` → "SEVENTY-FIVE"
+- `NumberInWords(0.75)` → "SEVENTY FIVE"
 
 ## License
 
