@@ -66,11 +66,11 @@ export function NumberInWords(value: Number): string {
   return convert_number(value) + f_text;
 }
 
-function frac(f) {
+function frac(f: any) {
   return f % 1;
 }
 
-function convert_number(number) {
+function convert_number(number: any) {
   if (number < 0 || number > 999999999) {
     return 'NUMBER OUT OF RANGE!';
   }
