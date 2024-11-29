@@ -74,10 +74,8 @@ function convert_number(number: any) {
   if (number < 0 || number > 999999999) {
     return 'NUMBER OUT OF RANGE!';
   }
-  var Gn = Math.floor(number / 10000000); /* Crore */
-  number -= Gn * 10000000;
-  var kn = Math.floor(number / 100000); /* lakhs */
-  number -= kn * 100000;
+  var mn = Math.floor(number / 1000000); /* MILLION */
+  number -= mn * 1000000;
   var Hn = Math.floor(number / 1000); /* thousand */
   number -= Hn * 1000;
   var Dn = Math.floor(number / 100); /* Tens (deca) */
@@ -86,11 +84,8 @@ function convert_number(number: any) {
   var one = Math.floor(number % 10);
   var res = '';
 
-  if (Gn > 0) {
-    res += convert_number(Gn) + ' BILLION';
-  }
-  if (kn > 0) {
-    res += (res == '' ? '' : ' ') + convert_number(kn) + ' MILLION';
+  if (mn > 0) {
+    res += (res == '' ? '' : ' ') + convert_number(mn) + ' MILLION';
   }
   if (Hn > 0) {
     res += (res == '' ? '' : ' ') + convert_number(Hn) + ' THOUSAND';
